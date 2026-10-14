@@ -2,12 +2,13 @@
     .name = .freetype,
     .version = "2.14.3",
     .fingerprint = 0xac2059b675967f0b,
-    .minimum_zig_version = "0.15.2",
+    .minimum_zig_version = "0.16.0",
     .paths = .{
         "LICENSE",
         "README.md",
         "build.zig",
         "build.zig.zon",
+        "process_ftoption_h.zig",
     },
     .dependencies = .{
         .freetype = .{
@@ -23,6 +24,14 @@
             .url = "git+https://github.com/allyourcodebase/zlib?ref=1.3.2#d3b5519d3b73616a6bfece0712f080029d2a9244",
             .hash = "zlib-1.3.2-ZZQ7lc8NAAAHm9MDfplvwoesXvk4tVm6VCsiI8KnIbT0",
             .lazy = true,
+        },
+        .bzip2 = .{
+            .url = "git+https://github.com/allyourcodebase/bzip2#d7668d5ee5eb55489c35632ecf0b0107c7a77569",
+            .hash = "bzip2-1.0.8-m7CPz2QGAADdAt97rbHaz6ekIt864HgHs9rZ3fsYF5Fy",
+        },
+        .harfbuzz = .{
+            .url = "git+https://github.com/allyourcodebase/harfbuzz#d055840ecefefcd57f5ddeb2fa8c83fafed1a40b",
+            .hash = "harfbuzz-14.1.0-Ip1VAuGZAAC1jdxPHOMPoHyi-50Hm_q4bveaVflELHGw",
         },
     },
 }
